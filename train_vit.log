@@ -1,0 +1,132 @@
+Requirement already satisfied: colossalai>=0.1.12 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (0.3.6)
+Requirement already satisfied: torch>=1.8.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (1.13.0)
+Requirement already satisfied: numpy>=1.24.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 3)) (1.26.4)
+Requirement already satisfied: tqdm>=4.61.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 4)) (4.65.0)
+Requirement already satisfied: transformers>=4.20.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 5)) (4.39.3)
+Requirement already satisfied: datasets in /home/yufeng/anaconda3/lib/python3.9/site-packages (from -r requirements.txt (line 6)) (2.18.0)
+Requirement already satisfied: psutil in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (5.9.0)
+Requirement already satisfied: packaging in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (23.2)
+Requirement already satisfied: pre-commit in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (3.7.0)
+Requirement already satisfied: rich in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (13.3.5)
+Requirement already satisfied: click in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (8.1.7)
+Requirement already satisfied: fabric in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (3.2.2)
+Requirement already satisfied: contexttimer in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (0.3.3)
+Requirement already satisfied: ninja in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (1.11.1.1)
+Requirement already satisfied: safetensors in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (0.4.3)
+Requirement already satisfied: einops in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: pydantic in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (2.5.3)
+Requirement already satisfied: ray in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (2.10.0)
+Requirement already satisfied: sentencepiece in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (0.2.0)
+Requirement already satisfied: google in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (3.0.0)
+Requirement already satisfied: protobuf in /home/yufeng/anaconda3/lib/python3.9/site-packages (from colossalai>=0.1.12->-r requirements.txt (line 1)) (3.20.3)
+Requirement already satisfied: typing_extensions in /home/yufeng/anaconda3/lib/python3.9/site-packages (from torch>=1.8.1->-r requirements.txt (line 2)) (4.9.0)
+Requirement already satisfied: filelock in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (3.13.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.19.3 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (0.22.2)
+Requirement already satisfied: pyyaml>=5.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (6.0.1)
+Requirement already satisfied: regex!=2019.12.17 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (2023.10.3)
+Requirement already satisfied: requests in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (2.31.0)
+Requirement already satisfied: tokenizers<0.19,>=0.14 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from transformers>=4.20.0->-r requirements.txt (line 5)) (0.15.2)
+Requirement already satisfied: pyarrow>=12.0.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (14.0.2)
+Requirement already satisfied: pyarrow-hotfix in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (0.6)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (0.3.8)
+Requirement already satisfied: pandas in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (2.1.4)
+Requirement already satisfied: xxhash in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (3.4.1)
+Requirement already satisfied: multiprocess in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (0.70.16)
+Requirement already satisfied: fsspec<=2024.2.0,>=2023.1.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from fsspec[http]<=2024.2.0,>=2023.1.0->datasets->-r requirements.txt (line 6)) (2023.10.0)
+Requirement already satisfied: aiohttp in /home/yufeng/anaconda3/lib/python3.9/site-packages (from datasets->-r requirements.txt (line 6)) (3.9.3)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (1.2.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (23.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (1.4.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (6.0.4)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (1.9.3)
+Requirement already satisfied: async-timeout<5.0,>=4.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from aiohttp->datasets->-r requirements.txt (line 6)) (4.0.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from requests->transformers>=4.20.0->-r requirements.txt (line 5)) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from requests->transformers>=4.20.0->-r requirements.txt (line 5)) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from requests->transformers>=4.20.0->-r requirements.txt (line 5)) (1.26.18)
+Requirement already satisfied: certifi>=2017.4.17 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from requests->transformers>=4.20.0->-r requirements.txt (line 5)) (2024.2.2)
+Requirement already satisfied: invoke>=2.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: paramiko>=2.4 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (3.4.0)
+Requirement already satisfied: decorator>=5 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (5.1.1)
+Requirement already satisfied: deprecated>=1.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.2.14)
+Requirement already satisfied: beautifulsoup4 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from google->colossalai>=0.1.12->-r requirements.txt (line 1)) (4.12.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pandas->datasets->-r requirements.txt (line 6)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pandas->datasets->-r requirements.txt (line 6)) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pandas->datasets->-r requirements.txt (line 6)) (2023.3)
+Requirement already satisfied: cfgv>=2.0.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (3.4.0)
+Requirement already satisfied: identify>=1.0.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.5.35)
+Requirement already satisfied: nodeenv>=0.11.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.8.0)
+Requirement already satisfied: virtualenv>=20.10.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (20.25.1)
+Requirement already satisfied: annotated-types>=0.4.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pydantic->colossalai>=0.1.12->-r requirements.txt (line 1)) (0.6.0)
+Requirement already satisfied: pydantic-core==2.14.6 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from pydantic->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.14.6)
+Requirement already satisfied: jsonschema in /home/yufeng/anaconda3/lib/python3.9/site-packages (from ray->colossalai>=0.1.12->-r requirements.txt (line 1)) (4.19.2)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from ray->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.0.3)
+Requirement already satisfied: markdown-it-py<3.0.0,>=2.2.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from rich->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from rich->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.15.1)
+Requirement already satisfied: wrapt<2,>=1.10 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from deprecated>=1.2->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.14.1)
+Requirement already satisfied: mdurl~=0.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from markdown-it-py<3.0.0,>=2.2.0->rich->colossalai>=0.1.12->-r requirements.txt (line 1)) (0.1.0)
+Requirement already satisfied: setuptools in /home/yufeng/anaconda3/lib/python3.9/site-packages (from nodeenv>=0.11.1->pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (68.2.2)
+Requirement already satisfied: bcrypt>=3.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from paramiko>=2.4->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (3.2.0)
+Requirement already satisfied: cryptography>=3.3 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from paramiko>=2.4->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (42.0.5)
+Requirement already satisfied: pynacl>=1.5 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from paramiko>=2.4->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: six>=1.5 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from python-dateutil>=2.8.2->pandas->datasets->-r requirements.txt (line 6)) (1.16.0)
+Requirement already satisfied: distlib<1,>=0.3.7 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from virtualenv>=20.10.0->pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (0.3.8)
+Requirement already satisfied: platformdirs<5,>=3.9.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from virtualenv>=20.10.0->pre-commit->colossalai>=0.1.12->-r requirements.txt (line 1)) (3.10.0)
+Requirement already satisfied: soupsieve>1.2 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from beautifulsoup4->google->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.5)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from jsonschema->ray->colossalai>=0.1.12->-r requirements.txt (line 1)) (2023.7.1)
+Requirement already satisfied: referencing>=0.28.4 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from jsonschema->ray->colossalai>=0.1.12->-r requirements.txt (line 1)) (0.30.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from jsonschema->ray->colossalai>=0.1.12->-r requirements.txt (line 1)) (0.10.6)
+Requirement already satisfied: cffi>=1.1 in /home/yufeng/anaconda3/lib/python3.9/site-packages (from bcrypt>=3.2->paramiko>=2.4->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (1.16.0)
+Requirement already satisfied: pycparser in /home/yufeng/anaconda3/lib/python3.9/site-packages (from cffi>=1.1->bcrypt>=3.2->paramiko>=2.4->fabric->colossalai>=0.1.12->-r requirements.txt (line 1)) (2.21)
+[04/17/24 16:40:47] INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/anaconda3/lib/python3.9/site-packages/
+                             colossalai/initialize.py:67 launch                 
+                    INFO     colossalai - colossalai - INFO: Distributed        
+                             environment is initialized, world size: 4          
+[04/17/24 16:41:37] INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/ColossalAI/examples/images/vit/vit_tra
+                             in_demo.py:171 main                                
+                    INFO     colossalai - colossalai - INFO: Finish loading     
+                             model from google/vit-base-patch16-224             
+                    INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/ColossalAI/examples/images/vit/vit_tra
+                             in_demo.py:199 main                                
+                    INFO     colossalai - colossalai - INFO: Set plugin as      
+                             gemini                                             
+[extension] Compiling the JIT cpu_adam_x86 kernel during runtime now
+[extension] Compiling the JIT cpu_adam_x86 kernel during runtime now
+[extension] Compiling the JIT cpu_adam_x86 kernel during runtime now
+[extension] Time taken to compile cpu_adam_x86 op: 0.5164546966552734 seconds
+[extension] Compiling the JIT cpu_adam_x86 kernel during runtime now
+[extension] Time taken to compile cpu_adam_x86 op: 0.3891916275024414 seconds
+[extension] Compiling the JIT fused_optim_cuda kernel during runtime now
+[extension] Compiling the JIT fused_optim_cuda kernel during runtime now
+[extension] Time taken to compile cpu_adam_x86 op: 0.5315244197845459 seconds
+[extension] Time taken to compile cpu_adam_x86 op: 0.48410654067993164 seconds
+[extension] Time taken to compile fused_optim_cuda op: 0.4038543701171875 seconds
+[extension] Compiling the JIT fused_optim_cuda kernel during runtime now
+[extension] Time taken to compile fused_optim_cuda op: 0.504727840423584 seconds
+[extension] Compiling the JIT fused_optim_cuda kernel during runtime now
+[extension] Time taken to compile fused_optim_cuda op: 0.49149537086486816 seconds
+[extension] Time taken to compile fused_optim_cuda op: 0.503986120223999 seconds
+[04/17/24 16:41:42] INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/ColossalAI/examples/images/vit/vit_tra
+                             in_demo.py:230 main                                
+                    INFO     colossalai - colossalai - INFO: Start finetuning   
+Evaluation result for epoch 1:                 average_loss=1.1607,                 accuracy=0.8594.
+Evaluation result for epoch 2:                 average_loss=0.2364,                 accuracy=0.9766.
+Evaluation result for epoch 3:                 average_loss=0.2099,                 accuracy=0.9844.
+[04/17/24 16:41:54] INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/ColossalAI/examples/images/vit/vit_tra
+                             in_demo.py:234 main                                
+                    INFO     colossalai - colossalai - INFO: Finish finetuning  
+[04/17/24 16:41:55] INFO     colossalai - colossalai - INFO:                    
+                             /home/yufeng/ColossalAI/examples/images/vit/vit_tra
+                             in_demo.py:238 main                                
+                    INFO     colossalai - colossalai - INFO: Saving model       
+                             checkpoint to ./output_model                       
+
+====== Training on All Nodes =====
+127.0.0.1: success
+
+====== Stopping All Nodes =====
+127.0.0.1: finish

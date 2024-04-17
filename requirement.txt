@@ -1,0 +1,9 @@
+torch==1.13.0
+transformers
+torchvision
+torchaudio
+numpy
+pandas
+matplotlib
+scikit-learn
+
